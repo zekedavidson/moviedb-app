@@ -1,6 +1,6 @@
 # Movie Database App
 
-A modern React-based movie database application built with Vite, Tailwind CSS, and Appwrite for backend services.
+A modern React-based movie database application built with Vite, Tailwind CSS, and Appwrite for backend services, based on JavaScript Mastery react tutorial.
 
 ## 🚀 Features
 
@@ -112,19 +112,12 @@ The project uses Tailwind CSS for styling. All utility classes are available thr
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
+- [JavaScript Mastery](https://www.youtube.com/watch?v=dCLhUialKPQ&t=5987s) for tutorial and guidance
 - [Appwrite](https://appwrite.io) for backend services
 - [Vite](https://vitejs.dev/) for the build tool
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 - [React](https://reactjs.org/) for the frontend framework
 
-## 📞 Contact
 
-Your Name - [@your-twitter](https://twitter.com/your-twitter) - your.email@example.com
-
-Project Link: [https://github.com/your-username/moviedb-app](https://github.com/your-username/moviedb-app)
