@@ -114,7 +114,7 @@ The project uses Tailwind CSS for styling. All utility classes are available thr
 
 ## 🙏 Acknowledgments
 
-- [JavaScript Mastery](https://www.youtube.com/watch?v=dCLhUialKPQ&t=5987s) for tutorial and guidance
+- [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) for tutorial and guidance
 - [Appwrite](https://appwrite.io) for backend services
 - [Vite](https://vitejs.dev/) for the build tool
 - [Tailwind CSS](https://tailwindcss.com/) for styling
