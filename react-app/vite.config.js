@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
-  // Use relative paths so the site works whether served at root or subpath
-  base: './',
+export default defineConfig(({ mode }) => ({
+  // Use '/' in dev, './' in production builds
+  base: mode === 'production' ? './' : '/',
   plugins: [react(), tailwindcss()],
-})
+}))
