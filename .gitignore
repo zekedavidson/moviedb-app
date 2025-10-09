@@ -72,7 +72,9 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public
+# Ignore only the repo-root public, not app-specific ones
+/public/
+!react-app/public/**
 
 # Storybook build outputs
 .out
