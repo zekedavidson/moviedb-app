@@ -1,11 +1,12 @@
 import React from 'react'
+import { getAssetUrl } from '../utils/assetUrl.js'
 
 const MovieCard = ({ movie: {title, vote_average, poster_path, release_date, original_language} }) => {
     return (
         <div className="movie-card">
         <img src={poster_path ?
             `https://image.tmdb.org/t/p/w500/${poster_path}` :
-            '/No-Poster-portrait.png'}
+            getAssetUrl('/No-Poster-portrait.png')}
         alt={title}/>
 
         <div className="mt-4">
@@ -13,7 +14,7 @@ const MovieCard = ({ movie: {title, vote_average, poster_path, release_date, ori
 
             <div className="content">
                 <div className="rating">
-                    <img src="/star.svg" alt="Star Icon" />
+                    <img src={getAssetUrl('/star.svg')} alt="Star Icon" />
                     <p>{vote_average ? vote_average.toFixed(1) : 'N/A'}</p>
                 </div>
 
