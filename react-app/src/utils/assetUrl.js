@@ -1,8 +1,8 @@
 export function getAssetUrl(relativePath) {
-  // Ensures assets in `public/` resolve correctly under any Vite base path
-  const base = import.meta.env.BASE_URL || '/';
-  const normalized = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
-  return new URL(normalized, base).pathname;
+  // Resolve assets in `public/` under any Vite base path without relying on URL()
+  const base = (import.meta.env.BASE_URL || '/').replace(/\/+$/, '/');
+  const path = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
+  return `${base}${path}`.replace(/\/+/g, '/');
 }
 
 
